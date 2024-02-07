@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Services Calculator";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use the calculator below to calculate the price for premium tutoring about BYU basketball.</p>
+
+<div class="calculator-container">
+    <label for="hours">Number of Hours:</label>
+    <input type="text" id="hours" placeholder="Enter hours">
+
+    <label for="rate">Hourly Rate:</label>
+    <input type="text" id="rate" value="20" readonly>
+
+    <button id="calculateBtn">Calculate Total</button>
+
+    <label for="total">Total Cost:</label>
+    <input type="text" id="total" readonly>
+</div>
+
+<br />
+
+<img src="~/BYU3.webp" alt="President Reese" width="500px" />
+<img src="~/BYU4.webp" alt="Dap" width="500px" />
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="calculator.js"></script>
